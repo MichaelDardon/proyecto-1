@@ -36,5 +36,46 @@
         }
     </style>
 </head>
+<body>
+  
+    <form name="Calculadora">
+    <table border="1" align="center" style="width: 300px; height: 300px;">
+        <caption><strong>Calculadora hecha en HTML</strong></caption> 
+        <tr>
 
+            <td colspan="4"><input id="pantalla" type="text" name="pantalla"></td>
+            
+        </tr>
+
+        <tr>
+            <td><input id="boton" type="button" value="7" onclick="pantalla.value+='7'"></td>
+            <td><input id="boton" type="button" value="8" onclick="pantalla.value+='8'"></td>
+            <td><input id="boton" type="button" value="9" onclick="pantalla.value+='9'"></td>
+            <td><input id="boton" type="button" value="/" onclick="pantalla.value+='/'"></td>
+        </tr>
+
+        <tr>
+            <td><input id="boton" type="button" value="4" onclick="pantalla.value+='4'"></td>
+            <td><input id="boton" type="button" value="5" onclick="pantalla.value+='5'"></td>
+            <td><input id="boton" type="button" value="6" onclick="pantalla.value+='6'"></td>
+            <td><input id="boton" type="button" value="*" onclick="pantalla.value+='*'"></td>
+        </tr>
+
+        <tr>
+            <td><input id="boton" type="button" value="1" onclick="pantalla.value+='1'"></td>
+            <td><input id="boton" type="button" value="2" onclick="pantalla.value+='2'"></td>
+            <td><input id="boton" type="button" value="3" onclick="pantalla.value+='3'"></td>
+            <td><input id="boton" type="button" value="-" onclick="pantalla.value+='-'"></td>
+        </tr>
+   
+        <tr>
+            <td><input id="boton" type="button" value="%" onclick="pantalla.value+='%'"></td>
+            <td><input id="boton" type="button" value="0" onclick="pantalla.value+='0'"></td>
+            <td><input id="boton" type="button" value="." onclick="pantalla.value+='.'"></td>
+            <td><input id="boton" type="button" value="=" onclick="pantalla.value=eval(pantalla.value)"></td>
+        </tr>
+        
+        </table>
+    </form>
+</body>
 </html>
